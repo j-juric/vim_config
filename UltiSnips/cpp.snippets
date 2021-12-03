@@ -1,0 +1,164 @@
+snippet cout
+std::cout << "$1" << std::endl;
+endsnippet
+
+snippet incc
+#include<$1>
+endsnippet
+
+snippet incq
+#include"$1"
+endsnippet
+
+snippet array
+std::array<${1:type},${2:N}>$3;
+endsnippet
+
+snippet vector
+std::vector<${1:type}>$2;
+endsnippet
+
+snippet deque
+std::deque<${1:type}>$2;
+endsnippet
+
+snippet map
+std::map<${1:Key},${2:Value}>$3;
+endsnippet
+
+snippet umap
+std::unordered_map<${1:Key},${2:Value}>$3;
+endsnippet
+
+snippet stack
+std::stack<${1:Type}>$2;
+endsnippet
+
+snippet queue
+std::queue<${1:Type}>$2;
+endsnippet
+
+snippet shrp
+std::shared_ptr<${1:Type}>$2;
+endsnippet
+
+snippet msp
+std::shared_ptr<${1:Type}>$2 = std::make_shared<$1>(${3:Args...});
+endsnippet
+
+snippet amsp
+auto $1 = std::make_shared<$2>(${3:Args...});
+endsnippet
+
+snippet unqp
+std::unique_ptr<${1:Type}>$2;
+endsnippet
+
+snippet munqp
+std::unique_ptr<${1:Type}>$2 = std::make_unique<$1>(${3:Args...});
+endsnippet
+
+snippet amunqp
+auto $1 = std::make_unique<$2>(${3:Args...});
+endsnippet
+
+snippet class
+class $1
+{
+public:
+	$1(${2:Args...});
+	~$1();
+private:
+	$3
+};
+endsnippet
+
+snippet tclass
+template<typename T>
+class $1
+{
+public:
+	$1(T ${2:Args...});
+	~$1();
+private:
+	$3
+};
+endsnippet
+
+snippet fun
+${1:void} ${2:funName}(${3:Args...})
+{
+	$4
+}
+endsnippet
+
+snippet fund
+${1:void} ${2:funName}(${3:Args...});
+endsnippet
+
+snippet ns
+namespace ${1:name}{
+	$2
+} /* namespace $1 */
+endsnippet
+
+snippet sca
+static_cast<${1:unsigned}>(${2:expr})$3;
+endsnippet
+
+snippet dca
+dynamic_cast<${1:unsigned}>(${2:expr})$3;
+endsnippet
+
+snippet fori
+for (int ${1:i} = 0; $1 < ${2:count}; ++$1)
+{
+	$3
+}
+endsnippet
+
+snippet fore
+for (${1:auto} ${2:i} : ${3:container})
+{
+	$4
+}
+endsnippet
+
+snippet lmd
+[$1]($2){$3};
+endsnippet
+
+snippet lmdm
+[$1]($2)
+{
+	$3
+};
+endsnippet
+
+snippet afund
+auto ${1:name}($2) -> ${3:void};
+endsnippet
+
+snippet afun
+auto ${1:name}($2) -> ${3:void}
+{
+	$4
+}
+endsnippet
+
+snippet temp
+template <typename T>
+endsnippet
+
+snippet temp2
+template <typename T, typename U>
+endsnippet
+
+snippet ifndef
+#ifndef $1
+#define $1
+
+$2
+
+#endif //$1
+endsnippet
