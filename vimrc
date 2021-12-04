@@ -94,6 +94,9 @@ map <C-Left> :tabprevious<CR>
 map <C-Right> :tabnext<CR>
 " Unhighlight
 nnoremap <F8> :noh <CR>
+" Resize window
+nnoremap <F5> :vertical res -5<CR>
+nnoremap <F6> :vertical res +5<CR>
 " Open fzf 
 nmap <C-p> :Files<CR>
 vnoremap <c-r> y<ESC>/<c-r>"<CR>
